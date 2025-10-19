@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita - Salmão com gorgonzola</title>
+  <link rel="stylesheet" href="./png/carne panela.css" />
+</head>
+
+<body class="background-doce">
+
+  <!-- Camada de fundo para os docinhos -->
+  <div class="bg-doces" aria-hidden="true"></div>
+
+  <!-- Conteúdo principal -->
+  <main class="site-content">
+    <section class="content-card">
+      <div class="card-header">
+        <h1 class="title mb-0">Salmão com gorgonzola</h1>
+        <div class="controls">
+          <button id="toggle-doces" class="btn">Desligar background</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+
+        <!-- Slot de Vídeo -->
+        <div class="video-slot">
+          <div class="video-frame">
+            <!-- Substitua pela sua URL de vídeo -->
+            <div class="video-placeholder"><iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/PhyJvTaI3kM?si=SmhnqkWDeOaJz1XG" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <!-- bota a url do video aq-->
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <h2 class="section-title">Ingredientes</h2>
+        <h2 class="section-title">salmão</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />3 pedaços de 250gr de salmão sem pele</label>
+          <label class="ingredient-item"><input type="checkbox" />300gr de gorgonzola</label>
+          <label class="ingredient-item"><input type="checkbox" />100gr de manteiga s sal fatiada</label>
+        </div>
+        <h2 class="section-title">temperos (opcional)</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />pimenta branca</label>
+          <label class="ingredient-item"><input type="checkbox" />limão</label>
+          <label class="ingredient-item"><input type="checkbox" />sal</label>
+          <label class="ingredient-item"><input type="checkbox" />lemon pepper</label>
+        </div>
+
+
+
+        <!-- Passo a passo -->
+        <h2 class="section-title">Passo a passo</h2>
+
+        <div class="steps">
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>amasse o gorgonzola para colocar em cima do salmão</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>colo em uma forma forrada com papel aluminio um fio de azeite de oliva para untar, coloque os pedaços
+              de salmão</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>esprema o limão e coloque o lemon pepper (opcional), coloque a pimenta e coloque envolta do salmão os
+              pedaços de manteiga para não resecar o salmão</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>passe azeite de oliva no salmão e coloque o gorgonzola por cima e jogue sal nas laterais do
+              salmão</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>feche o salmão no papel aluminio e coloque no forno pré aquecido a 180° por 20 minutos</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>abra o papel aluminio e coloque novamente com mais gorgonzola em cima até gratinar o queijo </span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>retire do forno e sirva com o acompanhamento que mais desejar!</span>
+          </label>
+        </div>
+
+        <!-- Ações extras -->
+        <div class="mt-24" style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="../pagina_principal_culinaria.html" class="btn">Página principal</a>
+          <a href="../pagina lista coberturas.html" class="btn">Coberturas</a>
+          <a href="../pagina lista.html" class="btn">Doces</a>
+          <a href="../pagina lista salgado.html" class="btn">Coisas salgadas</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./javascripts/salmao.js"></script>
+</body>
+
+</html>

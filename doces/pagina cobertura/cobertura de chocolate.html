@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita - Cobertura de chocolate </title>
+  <link rel="stylesheet" href="./png/cobertura.css" />
+</head>
+
+<body class="background-doce">
+
+  <!-- Camada de fundo para os docinhos -->
+  <div class="bg-doces" aria-hidden="true"></div>
+
+  <!-- Conteúdo principal -->
+  <main class="site-content">
+    <section class="content-card">
+      <div class="card-header">
+        <h1 class="title mb-0">Cobertura de chocolate</h1>
+        <div class="controls">
+          <button id="toggle-doces" class="btn">Desligar background</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+
+        <!-- Slot de Vídeo -->
+        <div class="video-slot">
+          <div class="video-frame">
+            <!-- Substitua pela sua URL de vídeo -->
+            <div class="video-placeholder"><iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/GY4iPVBlxKc?si=QpSHqWm4ymRvy8KT" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <h2 class="section-title">Ingredientes</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" /> 2 colheres de margarina</label>
+          <label class="ingredient-item"><input type="checkbox" /> 100ml de leite</label>
+          <label class="ingredient-item"><input type="checkbox" /> 5 colheres de açucar (opcional)</label>
+          <label class="ingredient-item"><input type="checkbox" /> 3 colheres de chocolate em pó</label>
+        </div>
+
+        <!-- Passo a passo -->
+        <h2 class="section-title">Passo a passo</h2>
+        <div class="steps">
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque a margarina e o leite na panela e ligue o fogo até a manteiga derreter</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o açucar e o chocolate em pó, misture e deixe ferver por 1 minuto e pode usar!</span>
+          </label>
+        </div>
+
+        <!-- Ações extras -->
+        <div class="mt-24" style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="../pagina_principal_culinaria.html" class="btn">Página principal</a>
+          <a href="../pagina lista coberturas.html" class="btn">Coberturas</a>
+          <a href="../pagina lista.html" class="btn">Doces</a>
+          <a href="../pagina lista salgado.html" class="btn">Coisas salgadas</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./javascript/javascriptchoco.js"></script>
+</body>
+
+</html>

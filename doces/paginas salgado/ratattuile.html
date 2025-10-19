@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita - Ratatouille</title> <!-- nome da receita-->
+  <link rel="stylesheet" href="./png/carne panela.css" />
+</head>
+
+<body class="background-doce">
+
+  <!-- Camada de fundo para os docinhos -->
+  <div class="bg-doces" aria-hidden="true"></div>
+
+  <!-- Conteúdo principal -->
+  <main class="site-content">
+    <section class="content-card">
+      <div class="card-header">
+        <h1 class="title mb-0">Ratatouille</h1> <!-- nome da receita-->
+        <div class="controls">
+          <button id="toggle-doces" class="btn">Desligar background</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+
+        <!-- Slot de Vídeo -->
+        <div class="video-slot">
+          <div class="video-frame">
+            <!-- Substitua pela sua URL de vídeo -->
+            <div class="video-placeholder"><iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/dlb3zIYF5yE?si=VGcvMrw9hv6zfjuW" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <!-- bota a url do video aq-->
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <h2 class="section-title">Ingredientes</h2>
+        <h2 class="section-title">vegetais</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" /> tomate</label>
+          <label class="ingredient-item"><input type="checkbox" />beringela</label>
+          <label class="ingredient-item"><input type="checkbox" />abobrinha</label>
+          <label class="ingredient-item"><input type="checkbox" />pimentão amarelo</label>
+          <label class="ingredient-item"><input type="checkbox" /> pimentão vermelho</label>
+          <label class="ingredient-item"><input type="checkbox" />cebola</label>
+        </div>
+        <h2 class="section-title">molho para o ratatouille</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />3 tomates picados</label>
+          <label class="ingredient-item"><input type="checkbox" />1 dente de alho picado</label>
+          <label class="ingredient-item"><input type="checkbox" />azeite a gosto</label>
+          <label class="ingredient-item"><input type="checkbox" />menjericão</label>
+          <label class="ingredient-item"><input type="checkbox" />orégano</label>
+          <label class="ingredient-item"><input type="checkbox" />tomilho</label>
+        </div>
+
+
+        <!-- Passo a passo -->
+        <h2 class="section-title">Passo a passo</h2>
+
+        <div class="steps">
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>Em uma panela coloque o azeite, a cebola e o alho, assim que murchar o alho e a cebola coloque o
+              tomate</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque sal, colorau (opcional) e a pimenta, aumente o fogo até o tomate reduzir</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o tomilho, manjericão, orégano</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>em uma forma redonda, coloque o molho no fundo espalhando de forma uniforme</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>corte os legumes em rodelas, não misturando os legumes, preferenciamente deixando todos na mesma
+              grossura</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque uma rodela de cada legume, colocando por exemplo, uma rodela de cebola, uma rodela de tomate,
+              uma rodela de abobrinha, uma rodela de pimentão vermelho, uma rodela de berinjela e uma rodela de pimentão
+              amarelo</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>não deixe os legumes em colunas, deixe eles sempre "em pé" tentando circular toda a forma, repita isso
+              até acabar os legumes</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>jogue vinho branco (opcional) e jogue bastante azeite em cima dos legumes, coloque pimenta e sal a
+              gosto e orégano</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque no forno pré aquecido a 180° por 40 minutos e depois dos 40 minutos, pode se servir!</span>
+          </label>
+        </div>
+
+        <!-- Ações extras -->
+        <div class="mt-24" style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="../pagina_principal_culinaria.html" class="btn">Página principal</a>
+          <a href="../pagina lista coberturas.html" class="btn">Coberturas</a>
+          <a href="../pagina lista.html" class="btn">Doces</a>
+          <a href="../pagina lista salgado.html" class="btn">Coisas salgadas</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./javascripts/ratatouille.js"></script>
+</body>
+
+</html>

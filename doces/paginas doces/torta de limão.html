@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita - Torta de limão</title>
+  <link rel="stylesheet" href="./png/torta.css" />
+</head>
+
+<body class="background-doce">
+
+  <!-- Camada de fundo para os docinhos -->
+  <div class="bg-doces" aria-hidden="true"></div>
+
+  <!-- Conteúdo principal -->
+  <main class="site-content">
+    <section class="content-card">
+      <div class="card-header">
+        <h1 class="title mb-0">Torta de limão</h1>
+        <div class="controls">
+          <button id="toggle-doces" class="btn">Desligar background</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+
+        <!-- Slot de Vídeo -->
+        <div class="video-slot">
+          <div class="video-frame">
+            <!-- Substitua pela sua URL de vídeo -->
+            <div class="video-placeholder"><iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/X3dtT2bGrys?si=YI-97lpx4Y2KAuWi" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe></div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <h2 class="section-title">Ingredientes</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" /> 200gr de biscoito maizena ou maria</label>
+          <label class="ingredient-item"><input type="checkbox" /> 1/2 colher de chá de raspas de limão</label>
+          <label class="ingredient-item"><input type="checkbox" /> 100gr de manteiga sem sal</label>
+          <label class="ingredient-item"><input type="checkbox" /> 1 caixinha de leite condensado</label>
+          <label class="ingredient-item"><input type="checkbox" /> 1 caixinha de creme de leite</label>
+          <label class="ingredient-item"><input type="checkbox" /> 1/4 de xícara de água</label>
+          <label class="ingredient-item"><input type="checkbox" /> 6gr de gelatina sem sabor</label>
+        </div>
+
+        <!-- Passo a passo -->
+        <h2 class="section-title">Passo a passo</h2>
+        <div class="steps">
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>triture as bolachas até ficar ao ponto de farinha</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque as raspas de limão e a manteiga e misture até ficar ao ponto de quebra</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque metade dessa massa no fundo da forma ou travessa e a outra metade coloque nas bordas, sempre
+              apertando</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque no forno pré aquecido a 180° por 13 minutos ou até ficar levemente dourada</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque na geladeira para gelar a massa</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o leite cond. e o creme de leite no liquidificador</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o suco de limão no liquidificador</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque em uma vasilia separada a água e a gelatina sem sabor para hidratar a gelatina por 4
+              minutos</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>derreta a gelatina em banho maria ou no micro-ondas até ficar bem liquida</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque a gelatina no liquidificador e bata tudo muito bem</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o creme na massa e coloque na geladeira por 4 horas</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque raspas de limão em cima da torta já gelada e se delicie!</span>
+          </label>
+        </div>
+
+        <!-- Ações extras -->
+        <div class="mt-24" style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="../pagina_principal_culinaria.html" class="btn">Página principal</a>
+          <a href="../pagina lista coberturas.html" class="btn">Coberturas</a>
+          <a href="../pagina lista.html" class="btn">Doces</a>
+          <a href="../pagina lista salgado.html" class="btn">Coisas salgadas</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./javascripts/torta_limao.js"></script>
+</body>
+
+</html>

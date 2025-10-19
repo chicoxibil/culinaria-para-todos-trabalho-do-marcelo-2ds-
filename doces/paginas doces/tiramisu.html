@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita - Tiramisu </title>
+  <link rel="stylesheet" href="./png/tiramisu.css" />
+</head>
+
+<body class="background-doce">
+
+  <!-- Camada de fundo para os docinhos -->
+  <div class="bg-doces" aria-hidden="true"></div>
+
+  <!-- Conteúdo principal -->
+  <main class="site-content">
+    <section class="content-card">
+      <div class="card-header">
+        <h1 class="title mb-0">Tiramisu</h1>
+        <div class="controls">
+          <button id="toggle-doces" class="btn">Desligar background</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+
+        <!-- Slot de Vídeo -->
+        <div class="video-slot">
+          <div class="video-frame">
+            <!-- Substitua pela sua URL de vídeo -->
+            <div class="video-placeholder"><iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/rnmnK0d1rA8?si=1xiIQYqjdeN43c0a" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <h2 class="section-title">Ingredientes para o queijo mascarpone</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" /> 1l de creme de leite fresco</label>
+          <label class="ingredient-item"><input type="checkbox" /> 1 colher de chá de açucar</label>
+          <label class="ingredient-item"><input type="checkbox" /> 1 colher de chá de sal</label>
+          <label class="ingredient-item"><input type="checkbox" /> 1/4 de colher de chá de ácido tartárico</label>
+        </div>
+        <h2 class="section-title">Ingredientes para as bolachas ou bolo</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" /> 5 ovos</label>
+          <label class="ingredient-item"><input type="checkbox" /> 150gr de açucar</label>
+          <label class="ingredient-item"><input type="checkbox" /> 180gr de farinha</label>
+          <label class="ingredient-item"><input type="checkbox" /> raspas de limão e laranja</label>
+        </div>
+        <h2 class="section-title">Ingredientes para o creme mascarpone</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" /> 2 ovos</label>
+          <label class="ingredient-item"><input type="checkbox" /> 75gr de açucar</label>
+          <label class="ingredient-item"><input type="checkbox" /> 2 colheres de sopa de vinho marsala</label>
+          <label class="ingredient-item"><input type="checkbox" /> 1 colher de essencia de baunilha</label>
+          <label class="ingredient-item"><input type="checkbox" /> 300gr de queijo mascarpone</label>
+        </div>
+        <h2 class="section-title">Ingredientes para o tiramisu</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" /> bolachas feitas anteriormente ou dedo de moça</label>
+          <label class="ingredient-item"><input type="checkbox" /> creme mascarpone</label>
+          <label class="ingredient-item"><input type="checkbox" /> café gelado regado com vinho marsala e licor de
+            café</label>
+
+        </div>
+
+        <!-- Passo a passo -->
+        <h2 class="section-title">Passo a passo</h2>
+        <div class="steps">
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o leite e o açucar, quando chegar a 80°, desligue o fogo</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o sal e o ácido tartárico e misture, após isso deixe descansar em um recipiente de vidro na
+              geladeira por 24 horas.</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque os ovos e o açucar em um recipiente, mexa logo após colocar o açucar para não gerar peliculas
+              nos ovos</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o recipiente em banho maria e mexa rapidamente sem parar, se não se sentir confiante mexa um
+              pouco em banho maria e um pouco fora do banho maria</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>quando estiver aproximadamente a 40°, mexa com uma batedeira ou rapidamente na mão até ficar cremoso,
+              adicione as raspas</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>adicione 1/3 da farinha e mexa devagar e calmamente, depois de homogenia, adicione mais 1/3 e repita o
+              processo, adicione mais 1/3 e repita o processo</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque numa travessa com farinha em tiras, salpique açucar ou coloque numa forma untada com farinha,
+              coloque no forno a 170° até dourar</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>adicione o queijo mascarpone e misture aos poucos para igualar as temperaturas e texturas</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>deixe gelar na geladeira por 1 hora</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque o creme mascapone, molhe as bolhachas no café e coloque em cima do creme, repita todo o
+              processo até encher toda a forma, salpique cacau e pode se servir!</span>
+          </label>
+        </div>
+
+        <!-- Ações extras -->
+        <div class="mt-24" style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="../pagina_principal_culinaria.html" class="btn">Página principal</a>
+          <a href="../pagina lista coberturas.html" class="btn">Coberturas</a>
+          <a href="../pagina lista.html" class="btn">Doces</a>
+          <a href="../pagina lista salgado.html" class="btn">Coisas salgadas</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./javascripts/tiramisu.js"></script>
+</body>
+
+</html>

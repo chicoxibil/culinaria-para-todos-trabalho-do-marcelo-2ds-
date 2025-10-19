@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita - Carne de panela</title>
+  <link rel="stylesheet" href="./png/carne panela.css" />
+</head>
+
+<body class="background-doce">
+
+  <!-- Camada de fundo para os docinhos -->
+  <div class="bg-doces" aria-hidden="true"></div>
+
+  <!-- Conteúdo principal -->
+  <main class="site-content">
+    <section class="content-card">
+      <div class="card-header">
+        <h1 class="title mb-0">Carne de panela</h1>
+        <div class="controls">
+          <button id="toggle-doces" class="btn">Desligar background</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+
+        <!-- Slot de Vídeo -->
+        <div class="video-slot">
+          <div class="video-frame">
+            <!-- Substitua pela sua URL de vídeo -->
+            <div class="video-placeholder"><iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/4JNJAmXlbnI?si=Dd68t1ELd15jpFV5" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <h2 class="section-title">Ingredientes</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" /> Carne</label>
+          <label class="ingredient-item"><input type="checkbox" />banha</label>
+          <label class="ingredient-item"><input type="checkbox" />1 cebola</label>
+          <label class="ingredient-item"><input type="checkbox" />2 cenouras</label>
+          <label class="ingredient-item"><input type="checkbox" />4 batatas</label>
+        </div>
+
+        <!-- Passo a passo -->
+        <h2 class="section-title">Passo a passo</h2>
+        <div class="steps">
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque a banha na panela de pressão e ligue o fogo para aquecer</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span> descasque as batatas e a cenoura, corte a cenoura em rodelas e a batata em pedaços medios</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>corte a cebola em cubinhos e frite a carne, sempre mexendo para não grudar no fundo</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>depois de 25 minutos fritando a carne sempre mexendo, adicione o restante dos engredientes e coloque
+              água fervendo até quase cobrir os ingredientes</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>mexa e tampe na panela de pressão, quando começar a xiar (pegar pressão) temporize 30min e já pode se
+              servir!</span>
+          </label>
+        </div>
+
+        <!-- Ações extras -->
+        <div class="mt-24" style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="../pagina_principal_culinaria.html" class="btn">Página principal</a>
+          <a href="../pagina lista coberturas.html" class="btn">Coberturas</a>
+          <a href="../pagina lista.html" class="btn">Doces</a>
+          <a href="../pagina lista salgado.html" class="btn">Coisas salgadas</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./javascripts/javascript carne.js"></script>
+</body>
+
+</html>

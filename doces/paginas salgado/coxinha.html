@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita - coxinha</title>
+  <link rel="stylesheet" href="./png/carne panela.css" />
+</head>
+
+<body class="background-doce">
+
+  <!-- Camada de fundo para os docinhos -->
+  <div class="bg-doces" aria-hidden="true"></div>
+
+  <!-- Conteúdo principal -->
+  <main class="site-content">
+    <section class="content-card">
+      <div class="card-header">
+        <h1 class="title mb-0">Coxinha de Frango</h1>
+        <div class="controls">
+          <button id="toggle-doces" class="btn">Desligar background</button>
+        </div>
+      </div>
+
+      <div class="card-body">
+
+        <!-- Slot de Vídeo -->
+        <div class="video-slot">
+          <div class="video-frame">
+            <!-- Substitua pela sua URL de vídeo -->
+            <div class="video-placeholder"><iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/JJS9x54pIgQ?si=2y_tv_8UNt4dtlAr" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <!-- Ingredientes -->
+        <h2 class="section-title">Ingredientes</h2>
+        <h2 class="section-title">massa</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />4 xícaras de água</label>
+        </div>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />1 tablete de caldo de galinha</label>
+        </div>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />3 colheres de sopa de óleo</label>
+        </div>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />1 colher de chá de sal</label>
+        </div>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />3 xícaras de farinha de trigo</label>
+        </div>
+
+
+        <h2 class="section-title">recheio</h2>
+        <div class="ingredients" id="ingredientes">
+          <label class="ingredient-item"><input type="checkbox" />600gr de peito de frango cozido e desfiado</label>
+          <label class="ingredient-item"><input type="checkbox" />3 "fios" de óleo</label>
+          <label class="ingredient-item"><input type="checkbox" />2 dentes de alho</label>
+          <label class="ingredient-item"><input type="checkbox" />colorau a gosto</label>
+          <label class="ingredient-item"><input type="checkbox" />pimenta do reino a gosto</label>
+          <label class="ingredient-item"><input type="checkbox" />cheiro verde a gosto</label>
+          <label class="ingredient-item"><input type="checkbox" />1/2 xícara de água</label>
+        </div>
+
+
+        <!-- Passo a passo -->
+        <h2 class="section-title">Passo a passo</h2>
+
+        <div class="steps">
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>em uma panela com a água já quente, coloque o sal, caldo de galinha e o óleo</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>com o caldo bem dissolvido, coloque a farinha peneirada, coloque metade da farinha e mexa, coloque a
+              outra metade e mexa novamente</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>com calma, vá apertando e mexendo até ficar bem uniforme, o ponto para retirada é que não gruda na
+              mão</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque a massa na bancada e vá apertando e sovando se possivel, cuidado com a temperatura!</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>coloque a massa num prato e cubra para não secar</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>em outra panela, coloque o óleo e os alhos para o recheio, coloque o colorau e o peito de frango,
+              coloque o cheiro verde e a pimenta também</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span> caso o recheio fique muito seco, adicione um pouco de água</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>faça uma bola com a massa e vá abrindo lentamente, cuidado para não deixar algum lado fino</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>com a mão em formato de concha, adicione o recheio já preparado, aperte bem pra firmar e vá apertando
+              o recheio pra baixo enquanto vai fechar as bordas</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>com ela fechada, vá modelando em formato de coxinha</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span>passe a coxinha já modelada em leite e depois na farinha de rosca ou se preferir panko</span>
+          </label>
+          <label class="step">
+            <input type="checkbox" class="step-check" />
+            <span> em 1lt de óleo, deixe o óleo ficar bem quente e coloque as coxinhas para fritar, quando ficar dourada
+              retire do óleo e ponha sobre um papel toalha, espere esfriar e se delicie!</span>
+          </label>
+
+        </div>
+
+        <!-- Ações extras -->
+        <div class="mt-24" style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="../pagina_principal_culinaria.html" class="btn">Página principal</a>
+          <a href="../pagina lista coberturas.html" class="btn">Coberturas</a>
+          <a href="../pagina lista.html" class="btn">Doces</a>
+          <a href="../pagina lista salgado.html" class="btn">Coisas salgadas</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./javascripts/coxinha.js"></script>
+</body>
+
+</html>
