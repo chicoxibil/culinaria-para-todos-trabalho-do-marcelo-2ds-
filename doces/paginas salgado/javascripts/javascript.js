@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const WIDTH_RANGE = [24, 96];    // largura em px (agora mais variada)
 
   const SOURCES = [
-    'png/marcelo.JPG' // docinho PNG transparente
+    'png/marcelo.JPG',
+    'png/salmao.png',// docinho PNG transparente
   ];
   
 
