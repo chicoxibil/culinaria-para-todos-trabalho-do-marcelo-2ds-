@@ -90,54 +90,6 @@
 
   <!-- Scripts: reutilizamos o javascript enviado e adicionamos script de controle da intro -->
   <script src="./javascripts/javascript carne.js"></script>
-  <script>
-    // Controla o overlay de introdução
-    (function () {
-      const intro = document.getElementById('intro');
-      const skip = document.getElementById('skip-intro');
-      const introIframe = document.getElementById('intro-iframe');
-      const heroIframe = document.getElementById('hero-iframe');
-
-      // Ao carregar a página, tentamos tocar o vídeo de introdução automaticamente (muted para aumentar chance de autoplay funcionar)
-      // Se o usuário pular a introdução, interrompemos o vídeo e escondemos o overlay.
-      skip.addEventListener('click', () => {
-        // Parar o vídeo de introdução (comando do player via postMessage)
-        if (introIframe && introIframe.contentWindow) {
-          introIframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
-        }
-        intro.style.display = 'none';
-        // opcional: ativar o vídeo principal (não autoplay aqui, usuário pode pressionar play)
-      });
-
-      // Se o usuário clicar fora do diálogo, não fechamos automaticamente — preferimos o botão explícito.
-
-      // Acessibilidade: permitir fechar com Esc
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          skip.click();
-        }
-      });
-
-      // Controle do toggle para os docinhos (botão já criado na página)
-      const toggleBtn = document.getElementById('toggle-doces');
-      if (toggleBtn) {
-        toggleBtn.addEventListener('click', () => {
-          const bg = document.querySelector('.bg-doces');
-          if (!bg) return;
-          if (bg.style.display === 'none') {
-            bg.style.display = '';
-            toggleBtn.innerText = 'Desligar background';
-          } else {
-            bg.style.display = 'none';
-            toggleBtn.innerText = 'Ligar Docinhos';
-          }
-        });
-      }
-
-      // Nota: por política de navegadores, autoplay com som pode ser bloqueado. A introdução é inicializada em mudo (mute=1) para aumentar a chance de iniciar automaticamente.
-
-    })();
-  </script>
 </body>
 
 </html>
